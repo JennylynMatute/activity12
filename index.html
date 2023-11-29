@@ -6,104 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             margin: 0;
             font-family: fantasy;
-            background-image: url(./387484491_1098500044651431_6641646489879802751_n.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
         }
-        header{
+    
+        header {
             background-color: rgb(3, 68, 32);
             color: whitesmoke;
             padding: 5px;
             text-align: left;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 15px;
-            border-bottom: 25px solid gold;
         }
-        .head2{
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
+    
+        .head2 {
+        padding: 10px;
+        display: flex;
+        align-items: center; /* Center items vertically */
+        justify-content: space-between;
+        flex-direction: row;
         }
-        a{
+    
+        a {
             text-decoration: none;
             text-align: right;
             color: antiquewhite;
             margin-right: 25px;
             justify-content: flex-end;
         }
-        .h2{
+    
+        .h2 {
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-align: center;
         }
-        .p1{
-            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    
+        .p1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
         }
-        article{
-            background-color: gray;
-            border: 5px solid gold;
+    
+        article {
+            background-color: red;
             font-size: 15px;
-           
+            padding: 20px;
         }
-        main{
+    
+        main {
+            background-color: gray;
             display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
             justify-content: space-around;
             padding: 20px;
-            display: flex;
         }
-        section{
-            margin: 10px;
+    
+        .s1,
+        .s2,
+        .s3 {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
             padding: 20px;
-            min-width: 300px;
-            border: 10px solid red;
-            border-radius: 5px;
-            flex: 1;
-            background-color: brown;
-            text-align: left;
-            color: antiquewhite;
+            margin: 10px; /* Add margin between sections for better spacing */
         }
-        .s1{
-            text-align: left;
-            border-top: 50px;
-            background-color: rgb(56, 85, 14);
-            border-color: greenyellow;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url(./371361285_855753966024368_99308908445256964_n.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            
+    
+        .s1 {
+            background-color: lightblue;
         }
-        .s2{
-            border-color: goldenrod;
-            border-top: 50px;
-            font-family: Arial, Helvetica, sans-serif;
+    
+        .s2 {
+            background-color: lightgreen;
         }
-        .s3{
-            border-color: greenyellow;
-            border-top: 50px;
-            text-align: left;
-            background-color: grey;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url(./370247220_855198492816630_3810302326595500953_n.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-        
+    
+        .s3 {
+            background-color: lightcoral;
         }
-        footer{
+    
+        footer {
             text-align: center;
             background-color: gold;
             padding: 5px;
-            font-family:cursive;
+            font-family: cursive;
             font-size: 20px;
         }
     
-        
+        @media (max-width: 800px) {
+        .s1 {
+            background-color: blue; /* Change color for smaller screens */
+        }
+
+        .s2 {
+            background-color: lightpink; /* Change color for smaller screens */
+        }
+
+        .s3 {
+            background-color: lightcyan; /* Change color for smaller screens */
+            
+        }
+        @media (max-width: 800px) {
+        article {
+            background-color: orange; /* Change color for smaller screens */
+        }
+    }
+}
+        @media (max-width: 800px){
+        header {
+            background-color: lightseagreen; /* Change color for smaller screens */
+        }
+
+        @media screen and (max-width: 600px) {
+        .head2 {
+            flex-direction: column; /* Stack items vertically on smaller screens */
+            align-items: center; /* Center items horizontally */
+        }
+    }
+    }
     </style>
+    
 </head>
 <body>
     <header class="head2">
